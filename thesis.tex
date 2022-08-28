@@ -1,0 +1,31 @@
+\documentclass{Dissertation}
+
+\begin{document}
+
+% Title page
+\title{Writing your thesis using \LaTeX}
+\date{September 20XX}
+\author{John Doe}
+\maketitle
+% If the style of the title page is specified,
+% insert PDF pages.
+% \includepdf{title.pdf}
+
+\frontmatter
+% ToC
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+\include{chapters/chapter01.tex}
+\include{chapters/chapter02.tex}
+
+\backmatter
+\bibliography{bibliography}
+% Can change bibliography style.
+\bibliographystyle{IEEEtran}
+
+\include{acknowledgements.tex}
+
+\end{document}

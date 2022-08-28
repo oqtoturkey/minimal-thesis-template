@@ -1,0 +1,145 @@
+\chapter{INTRODUCTION}\label{ch:introduction}
+\thispagestyle{empty}  % Remove page style (page number) from first page.
+
+\begin{outline}{Outline}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Nam consectetur ante pellentesque, ullamcorper enim sed, tristique arcu.
+  Proin consectetur diam et ex tempus semper. Nunc vel ante ligula.
+  Morbi ornare turpis sodales ipsum suscipit, consequat eleifend massa lacinia.
+  Vestibulum pharetra sem sit amet tellus convallis,
+  sit amet elementum eros viverra.
+  In hac habitasse platea dictumst.
+  Vivamus nec venenatis dui, at varius eros.
+\end{outline}
+
+\section{Lorem Ipsum}\label{sec:lorem}
+
+Lorem ipsum \etal \cite{doe2022dummy} dolor sit amet, consectetur adipiscing elit.
+In non gravida neque \cite{doe2022dummy,einstein1905zur}.
+Duis leo augue, rhoncus ac sodales venenatis, mollis sit amet metus.
+\Cref{fig:chat} shows ut sed feugiat nibh, ac dignissim eros.
+Aenean a quam aliquam, malesuada purus sit amet, pretium nisl.
+Aenean imperdiet nunc vitae leo ultrices tristique.
+Etiam accumsan mauris faucibus libero vulputate commodo \cref{eq:optim},
+\begin{equation}\label{eq:optim}
+  \argmin_{\bm{x} \in \mathbb{R}} f(\bm{x}).
+\end{equation}
+
+Nulla vulputate ante felis, quis mattis est molestie sed as shown in \cref{tab:monthday}.
+Vivamus convallis sapien mattis tellus dignissim sagittis.
+Aliquam erat volutpat. Praesent porttitor a nunc non aliquam.
+Nunc vestibulum blandit massa at consectetur.
+Aenean sed diam eleifend ligula ornare pretium nec eu nisl.
+Etiam et ex non arcu eleifend auctor.
+
+Morbi finibus nibh congue nunc dictum elementum vitae nec mauris.
+Phasellus non convallis dolor, vel pretium quam.
+Nunc aliquet malesuada turpis vel vestibulum.
+\begin{equation}\label{eq:sample}
+  \begin{split}
+  \left( \int_0^\infty \frac{\sin x}{\sqrt{x}} dx \right)^2
+  &= \sum_{k=0}^\infty \frac{(2k)!}{2^{2k}(k!)^2} \frac{1}{2k+1} \\
+  &= \prod_{k=1}^\infty \frac{4k^2}{4k^2 - 1} \\
+  &= \frac{\pi}{2}
+  \end{split}
+\end{equation}
+
+\begin{figure}[tbp]
+  \centering
+  \includegraphics[width=0.65\linewidth]{figs/fig1.pdf}
+  % [] Caption for Figure ToC.
+  % Same text is written to hide the Footnote symbol.
+  \caption[Lorem ipsum dolor sit amet, consectetur adipiscing elit.]
+  {Lorem ipsum dolor sit amet, consectetur adipiscing elit.\protect \footnotemark}
+  \label{fig:chat}
+\end{figure}
+\footnotetext{\url{https://doodleipsum.com/}}
+
+Integer sollicitudin, nisi vel vulputate placerat,
+tellus tortor laoreet arcu, sit amet iaculis nulla arcu et metus.
+Nunc pharetra mi nec ipsum tristique congue.
+Cras dictum porttitor auctor. Maecenas vehicula condimentum mattis.
+Integer facilisis maximus massa ac hendrerit\footnote{dummy text.}.
+Cras ut faucibus arcu, non viverra mauris.
+Praesent consequat ex sit amet tellus consectetur mollis. Duis eget nunc velit.
+
+\begin{table}[tbp]
+  \small  % Change font size.
+  \centering
+  \caption{Suspendisse et lacinia quam, quis malesuada orci.
+  Quisque convallis laoreet fermentum. }
+  \label{tab:monthday}
+  \begin{tabular}{@{}rrl@{}}
+  \toprule
+  Month & Day & Note                                                \\ \midrule
+  1     & 23  & \ang{12.3}                                          \\
+  2     & 2   & \SI{20}{\um}                                        \\
+  3     & 4   & \SIrange{5}{100}{m}                                 \\
+  4     & 5   & \SI{6.6720E11}{\newton\meter^2\per\square\kilogram} \\ \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Proin mauris}\label{sec:proin}
+
+\subsection{Nullam eu}\label{subsec:nullam}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+\Cref{fig:person} shows Aliquam in fringilla mauris.
+Praesent eu quam tortor.
+Suspendisse quis mauris quis orci scelerisque venenatis.
+Vivamus ultrices eu est sed pretium (\cref{fig:left}).
+Nulla eu tellus magna. Aenean posuere aliquam turpis,
+ac sollicitudin turpis tempus a (\cref{fig:left,fig:right}).
+Sed dapibus nisi in mi hendrerit, sit amet ultrices elit lacinia.
+Nullam a sagittis risus, at congue lorem.
+Nullam tincidunt augue euismod semper convallis.
+
+Proin mauris urna, mattis eu luctus id, egestas eget magna.
+In vehicula, velit id fermentum tincidunt, magna eros posuere dolor,
+ullamcorper convallis nibh massa non augue.
+Fusce porta ornare orci tempus malesuada.
+Duis semper commodo lectus vel malesuada.
+Nulla vitae orci at mi maximus lacinia id eu mi.
+Nunc venenatis rhoncus auctor.
+Curabitur viverra, nisi sed sodales consectetur, ipsum eros pretium tellus,
+quis mollis turpis sapien nec mauris.
+Phasellus urna diam, aliquet condimentum augue eu, pellentesque rutrum felis. Cras purus ex, hendrerit ut neque quis, blandit scelerisque augue.
+
+\begin{figure}[tbp]
+  \centering
+  \begin{minipage}{0.48\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{figs/fig2.pdf}
+    \subcaption{left figure.}
+    \label{fig:left}
+  \end{minipage}
+  \begin{minipage}{0.48\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{figs/fig3.pdf}
+    \subcaption{right figure.}
+    \label{fig:right}
+  \end{minipage}
+  \caption{Etiam venenatis arcu iaculis bibendum maximus.
+  Mauris fringilla sapien ligula, id rutrum ipsum venenatis non.
+  Cras congue justo eget leo mollis porta. }
+  \label{fig:person}
+\end{figure}
+
+\begin{enumerate}
+  \item Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  \item Vestibulum vel turpis sed mauris ullamcorper faucibus ac non ex.
+  \item Cras convallis ipsum vel arcu iaculis bibendum.
+\end{enumerate}
+
+\subsection{Sed tempor neque}\label{subsec:sed}
+
+``Lorem ipsum'' dolor sit amet, consectetur adipiscing elit.
+Vestibulum vel turpis sed mauris ullamcorper faucibus ac non ex.
+Cras convallis ipsum vel arcu iaculis bibendum.
+Sed eu metus id enim venenatis eleifend et laoreet nunc.
+
+\begin{itemize}
+  \item Quisque efficitur dui ut neque faucibus consequat.
+  \item Maecenas accumsan tortor ac elit tristique scelerisque.
+  \item Maecenas venenatis dolor ut ante dapibus, tincidunt fermentum dui feugiat.
+\end{itemize}
